@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:weather_app_with_getx/view/home/home.dart';
 import 'package:weather_app_with_getx/view/home/weather.dart';
 
 void main() => runApp(MyApp());

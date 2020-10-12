@@ -7,15 +7,6 @@ import 'package:geolocator/geolocator.dart';
 enum Status { loading, success, error }
 
 class WeatherController extends GetxController {
-  var cityNameData = "string".obs;
-  var weatherDescription = "string".obs;
-  var weatherWindSpeed = 0.0.obs;
-  var weatherSunriseTime = 0.obs;
-  var weatherSunsetTime = 0.obs;
-  var weatherTemperature = 0.obs;
-  var weatherHumidity = 0.obs;
-  var weatherIconLabel = "string".obs;
-  var weatherWindDirection = 0.obs;
 
   /// create a reactive WeatherModel. CasesModel().obs has same result
   final weather = Rx<WeatherModel>();
@@ -35,8 +26,8 @@ class WeatherController extends GetxController {
 
   @override
   void onReady() {
-    ever(weatherDescription, (_) async {
-      print("onready called , ${weatherDescription.value}");
+    ever(weather, (_) async {
+      print("onready called , ${weather.value.main.temp}");
     });
     super.onReady();
   }
