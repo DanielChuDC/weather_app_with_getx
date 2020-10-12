@@ -8,8 +8,6 @@ import 'package:weather_app_with_getx/view/home/widgets/dateTime.dart';
 import 'package:weather_icons/weather_icons.dart';
 
 class WeatherScreen extends GetView<WeatherController> {
-  final WeatherController _weatherController = Get.put(WeatherController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
