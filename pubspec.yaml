@@ -44,6 +44,8 @@ dependencies:
   weather_icons: ^2.0.1
   #For Text resize
   auto_size_text: ^2.1.0
+  # Add get test
+  get_test: ^3.13.2
 
 dev_dependencies:
   flutter_test:

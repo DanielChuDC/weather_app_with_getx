@@ -59,3 +59,8 @@ Solution:
 
 https://github.com/flutter/flutter/pull/58635
 
+
+4. GetxController not found
+https://github.com/jonataslaw/getx/issues/715
+
+Need to bind it using bind
